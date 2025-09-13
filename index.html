@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>Car Racing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gameWrap">
+<div class="hud">
+<div class="left"><div class="btn">Score: <span id="score">0</span></div><div class="btn">Lives: <span id="lives">3</span></div></div>
+<div class="right"><div class="btn big" id="speedLabel">Speed: 1.0x</div><button class="btn" id="pauseBtn">Pause</button></div>
+</div>
+
+
+<canvas id="gameCanvas" width="360" height="640"></canvas>
+
+
+<div class="controls">
+<div class="touchpad" id="leftPad">
+<div class="control-button" id="leftBtn">◀︎</div>
+<div style="flex:1;text-align:center;color:#ccc;">Tap/hold to move</div>
+<div class="control-button" id="rightBtn">▶︎</div>
+</div>
+<div class="touchpad" id="rightPad">
+<div class="control-button" id="brakeBtn">⟸ Brake</div>
+<div class="control-button" id="boostBtn">Boost ⟹</div>
+</div>
+</div>
+
+
+<div class="footerNote">Keyboard supported: Arrow keys to move, Space to boost. Designed to work on mobile browsers — rotate to portrait for best play.</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
